@@ -22,6 +22,15 @@
  {
      var $_type = 'code128';
      var $_barcodeheight = 60;
+@@ -194,7 +192,7 @@
+     * the $code array, containing the bar and space pattern
+     * for the Code128 B character set.
+     */
+-    function Image_Barcode_code128()
++    function __construct()
+     {
+         $this->code[0] = "212222";  // " "
+         $this->code[1] = "222122";  // "!"
 --- Image/Barcode/Code39.php
 +++ Image/Barcode/Code39.php
 @@ -25,8 +25,6 @@
